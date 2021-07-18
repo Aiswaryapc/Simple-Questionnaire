@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:form/first_page.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-int flag=0;
-class Options extends StatefulWidget {
+int flag=0,First=0,second=0,Third=0;
+class Options1 extends StatefulWidget {
 
-  const Options({Key? key,}) : super(key: key);
+  const Options1({Key? key,}) : super(key: key);
 
   @override
-  _OptionsState createState() => _OptionsState();
+  _Options1State createState() => _Options1State();
 }
 
-class _OptionsState extends State<Options> {
+class _Options1State extends State<Options1> {
 
 
   Color _containerColor1 = Colors.white;
@@ -53,6 +53,7 @@ class _OptionsState extends State<Options> {
 
                   _containerColor1 = Vx.violet800;
                   flag= 1;
+                  First=1;
                 });}
               },
 
@@ -82,7 +83,8 @@ class _OptionsState extends State<Options> {
                 setState(() {
 
                   _containerColor2 = Vx.violet800;
-                  flag= 2;
+                  flag= 1;
+                  First=2;
                 });}
               },
             ),
@@ -110,7 +112,8 @@ class _OptionsState extends State<Options> {
                 setState(() {
 
                   _containerColor3 = Vx.violet800;
-                  flag= 3;
+                  flag= 1;
+                  First=3;
                 });}
               },
             ),
@@ -138,7 +141,8 @@ class _OptionsState extends State<Options> {
                 setState(() {
 
                   _containerColor4 = Vx.violet800;
-                  flag= 4;
+                  flag= 1;
+                  First=4;
                 });}
               },
             ),

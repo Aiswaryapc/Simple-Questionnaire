@@ -54,7 +54,7 @@ class SplashScreenState extends State<MyHomePage> {
                       fontStyle: FontStyle.normal),
                   ).shimmer(
                       primaryColor: Colors.white,
-                      secondaryColor: Vx.violet300,
+                      secondaryColor: Vx.violet700,
                       duration:const Duration(seconds: 2)),)),
             ),
 
