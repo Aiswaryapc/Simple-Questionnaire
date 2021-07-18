@@ -25,7 +25,7 @@ class _SecondPageState extends State<SecondPage> {
               color: bg,
               child: Column(
                 children: [
-                  SizedBox(height: 60,),
+                  const SizedBox(height: 60,),
                   Material(
                     child: Container(
                       color: bg,

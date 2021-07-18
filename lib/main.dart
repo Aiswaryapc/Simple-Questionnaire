@@ -3,7 +3,7 @@ import 'dart:async';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+
 import 'package:velocity_x/velocity_x.dart';
 
 import 'first_page.dart';
@@ -32,7 +32,7 @@ class SplashScreenState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 4),
+    Timer(const Duration(seconds: 4),
             ()=>Navigator.pushReplacement(context,
             MaterialPageRoute(builder:
                 (context) => FirstPage(),
@@ -48,7 +48,7 @@ class SplashScreenState extends State<MyHomePage> {
               child: Container(
                 color: Colors.black,
                 child: Align(alignment: Alignment.center,
-                  child: Text("Form", style: TextStyle(
+                  child: const Text("Form", style: TextStyle(
                       fontFamily: "Monsterrat",
                       fontWeight: FontWeight.w900,
                       fontSize: 60,
@@ -56,7 +56,7 @@ class SplashScreenState extends State<MyHomePage> {
                   ).shimmer(
                       primaryColor: Colors.white,
                       secondaryColor: Vx.violet300,
-                      duration: Duration(seconds: 2)),)),
+                      duration:const Duration(seconds: 2)),)),
             ),
 
             ),
