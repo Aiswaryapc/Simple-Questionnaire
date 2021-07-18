@@ -13,6 +13,8 @@ class SecondPage extends StatefulWidget {
 }
 
 class _SecondPageState extends State<SecondPage> {
+  Color color1= Colors.blueGrey;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -94,15 +96,25 @@ class _SecondPageState extends State<SecondPage> {
                       child: Padding( padding: const EdgeInsets.all(30),
                           child: ElevatedButton(  child : Text("Next"),
                             style: ElevatedButton.styleFrom(
-                              primary: Vx.violet600 ,
+                              primary: color1 ,
                               elevation: 6,
                               onPrimary: Colors.white,
                               onSurface: Colors.grey,
-                            ),onPressed: () {
+
+                            ),onPressed: ( ) {if(flag > 0)
+                            {
+                              setState(() {
+
+                              color1 = Vx.violet800;
+                              flag=10;
+                              flag++;
+
+                            });
+
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(builder: (context) => LastPage ()),
-                              );
+                              );}
                             },
                           ))),
 

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:form/first_page.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-
+int flag=0;
 class Options extends StatefulWidget {
 
   const Options({Key? key,}) : super(key: key);
@@ -14,7 +14,7 @@ class Options extends StatefulWidget {
 
 class _OptionsState extends State<Options> {
 
-  int flag=0;
+
   Color _containerColor1 = Colors.white;
   Color _containerColor2 = Colors.white;
   Color _containerColor3 = Colors.white;
