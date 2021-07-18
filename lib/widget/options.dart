@@ -32,7 +32,7 @@ class _OptionsState extends State<Options> {
                 child: Container(
                   height: 50,
                   width: 200,
-                  child: Align(alignment: Alignment.center,
+                  child: const Align(alignment: Alignment.center,
                       child: Text('Red',)),
 
                   decoration: BoxDecoration(
@@ -64,7 +64,7 @@ class _OptionsState extends State<Options> {
                 child: Container(
                   height: 50,
                   width: 200,
-                  child: Align(alignment: Alignment.center,
+                  child: const Align(alignment: Alignment.center,
                       child: Text('Blue',)),
                   decoration: BoxDecoration(
                     border: Border.all(
@@ -93,7 +93,7 @@ class _OptionsState extends State<Options> {
                 child: Container(
                   height: 50,
                   width: 200,
-                  child: Align(alignment: Alignment.center,
+                  child:const Align(alignment: Alignment.center,
                       child: Text('Black',)),
                   decoration: BoxDecoration(
                     border: Border.all(
@@ -121,7 +121,7 @@ class _OptionsState extends State<Options> {
                 child: Container(
                   height: 50,
                   width: 200,
-                  child: Align(alignment: Alignment.center,
+                  child: const Align(alignment: Alignment.center,
                       child: Text('White',)),
                   decoration: BoxDecoration(
                     border: Border.all(

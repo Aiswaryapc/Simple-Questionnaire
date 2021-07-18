@@ -29,7 +29,7 @@ class _SecondPageState extends State<SecondPage> {
                   Material(
                     child: Container(
                       color: bg,
-                      child: Text('QUESTIONNAIRE',style: TextStyle(
+                      child: const Text('QUESTIONNAIRE',style: TextStyle(
                     fontFamily: "Monsterrat",
                     fontWeight: FontWeight.w900,
                     fontSize: 40,
@@ -70,7 +70,7 @@ class _SecondPageState extends State<SecondPage> {
                   ),
                   Expanded(child: Container()),
 
-                  Padding( padding: const EdgeInsets.all(14.0),
+                  const Padding( padding: EdgeInsets.all(14.0),
                       child: Material(child: Options())),
                   Expanded(child: Container()),
 

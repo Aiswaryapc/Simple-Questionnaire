@@ -26,7 +26,7 @@ class _FirstPageState extends State<FirstPage> {
         color: bg,
         child: Column(
           children: [
-            SizedBox(height: 60,),
+            const SizedBox(height: 60,),
             Material(
 
               child:AnimatedTextKit(
@@ -48,7 +48,7 @@ class _FirstPageState extends State<FirstPage> {
                   stopPauseOnTap: true,
                 ),
             ),
-            SizedBox(height: 70,),
+            const SizedBox(height: 70,),
             Text1("Name"),
         Padding(
             padding: const EdgeInsets.all(14.0),
@@ -56,9 +56,9 @@ class _FirstPageState extends State<FirstPage> {
                 type: MaterialType.canvas,
                 borderRadius: BorderRadius.circular(10),
                 child: TextField(
-                  style: TextStyle(color: Vx.violet800),
+                  style:const TextStyle(color: Vx.violet800),
                   textCapitalization: TextCapitalization.words,
-                  decoration: InputDecoration(
+                  decoration:const InputDecoration(
                     fillColor: Colors.white,
                       filled: true,
 
@@ -72,7 +72,7 @@ class _FirstPageState extends State<FirstPage> {
 
                 ))),
             Text1("Gender"),
-            Material(child: Gender()),
+            const Material(child: Gender()),
             Text1("Country"),
             Padding(padding: const EdgeInsets.all(14),
               child: Align(alignment: Alignment.centerLeft,
@@ -191,7 +191,7 @@ Widget Text1( text) {
         child: Padding(
             padding: const EdgeInsets.all(14.0),
             
-                child: Text(text, style: TextStyle(
+                child: Text(text, style:const TextStyle(
                     fontFamily: "Monsterrat",
 
                     fontWeight: FontWeight.w900,
@@ -201,7 +201,7 @@ Widget Text1( text) {
                     primaryColor: Colors.white,
 
                     secondaryColor: Vx.violet300,
-                    duration: Duration(seconds: 2)),),
+                    duration:const Duration(seconds: 2)),),
       ),
     ),
   );}
