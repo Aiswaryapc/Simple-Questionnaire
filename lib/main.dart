@@ -1,67 +1,21 @@
-import 'dart:async';
-
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:form/views/home_view.dart';
 
-import 'package:velocity_x/velocity_x.dart';
-
-import 'first_page.dart';
-
-void main()  {
-  runApp(MyHome());
+void main() {
+  runApp(MyApp());
 }
 
 
-class MyHome extends StatelessWidget {
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyHomePage(),
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark(),
+      theme: ThemeData(),
+      darkTheme: ThemeData.dark(),
+      themeMode: ThemeMode.system,
+      home: HomeView(),
     );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  @override
-  SplashScreenState createState() => SplashScreenState();
-}
-class SplashScreenState extends State<MyHomePage> {
-  @override
-  void initState() {
-    super.initState();
-    Timer(const Duration(seconds: 4),
-            ()=>Navigator.pushReplacement(context,
-            MaterialPageRoute(builder:
-                (context) => FirstPage(),
-            )
-        )
-    );
-  }
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-        children: [Expanded(
-            child:Material(
-              child: Container(
-                color: Colors.black,
-                child: Align(alignment: Alignment.center,
-                  child: const Text("Form", style: TextStyle(
-                      fontFamily: "Monsterrat",
-                      fontWeight: FontWeight.w900,
-                      fontSize: 60,
-                      fontStyle: FontStyle.normal),
-                  ).shimmer(
-                      primaryColor: Colors.white,
-                      secondaryColor: Vx.violet300,
-                      duration:const Duration(seconds: 2)),)),
-            ),
-
-            ),
-
-
-        ]);
   }
 }
