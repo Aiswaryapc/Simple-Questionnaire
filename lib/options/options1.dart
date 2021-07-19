@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:form/first_page.dart';
+import 'package:form/views/first_page.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 int flag=0,First=0,second=0,Third=0;

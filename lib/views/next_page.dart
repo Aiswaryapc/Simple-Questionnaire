@@ -1,9 +1,10 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:form/first_page.dart';
-import 'package:form/widget/options1.dart';
-import 'package:form/widget/options2.dart';
-import 'package:form/widget/options3.dart';
+import 'package:form/options/options1.dart';
+import 'package:form/options/options2.dart';
+import 'package:form/options/options3.dart';
+import 'package:form/views/first_page.dart';
+
 import 'package:velocity_x/velocity_x.dart';
 
 import 'last_page.dart';

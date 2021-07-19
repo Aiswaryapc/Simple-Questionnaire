@@ -5,7 +5,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-import 'first_page.dart';
+import 'views/first_page.dart';
 
 void main()  {
   runApp(MyHome());

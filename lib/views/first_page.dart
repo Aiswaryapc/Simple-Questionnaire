@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:form/country.dart';
-import 'package:form/next_page.dart';
+import 'package:form/widgets/country.dart';
+import 'package:form/views/next_page.dart';
+import 'package:form/widgets/gendre.dart';
 
 import 'package:velocity_x/velocity_x.dart';
 
@@ -116,67 +117,7 @@ class _FirstPageState extends State<FirstPage> {
   }
 }
 
-enum GenderTypes { Male, Female, Others}
 
-class Gender extends StatefulWidget {
-  const Gender({Key? key}) : super(key: key);
-
-  @override
-  State<Gender> createState() => _Gender();
-}
-
-/// This is the private State class that goes with MyStatefulWidget.
-class _Gender extends State<Gender> {
-  GenderTypes? _character = GenderTypes.Male;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: bg,
-      child: Column(
-        children: <Widget>[
-          ListTile(
-            title: const Text('Female'),
-            leading: Radio<GenderTypes>(
-              value: GenderTypes.Male,
-              groupValue: _character,
-
-              onChanged: (GenderTypes? value) {
-                setState(() {
-                  _character = value;
-                });
-              }, activeColor: Vx.violet400,
-            ),
-          ),
-          ListTile(
-            title: const Text('Male'),
-            leading: Radio<GenderTypes>(
-              value: GenderTypes.Female,
-              groupValue: _character,
-              onChanged: (GenderTypes? value) {
-                setState(() {
-                  _character = value;
-                });
-              },activeColor: Vx.violet400,
-            ),
-          ),
-          ListTile(
-            title: const Text('Others'),
-            leading: Radio<GenderTypes>(
-              value: GenderTypes.Others,
-              groupValue: _character,
-              onChanged: (GenderTypes? value) {
-                setState(() {
-                  _character = value;
-                });
-              },activeColor: Vx.violet400,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
 
 
 
